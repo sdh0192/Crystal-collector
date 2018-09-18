@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>~Crystal Collector Game!~</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body style="background-image: url('pictures/TheEightJewels.png');">
+
+    <div class="container">
+
+        <div class="jumbotron bg-primary" style="border: 2px solid black;">
+            <div class="container">
+                <h1 class="text-center">
+                    <strong>Crystal Collector!</strong>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 mb-4">
+                <div class="panel panel-default bg-white" style="border: 2px solid black;">
+                    <div class="panel-heading text-center bg-primary" style="border-bottom: 2px solid black;">
+                        <h2>Instructions</h2>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p>You will be given a random number at the start of the game. There are 4 crystals below. By clicking
+                            on a crystal you will add a specific amount of points to your total score. You win the game by
+                            mathcing your score to the target score, you lose the game if your number goes above the target
+                            score. The value of each crystal is hidden from you until you click on it. Each time when the
+                            game starts, the game will change the values of each crystal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="panel panel-default bg-white" style="border: 2px solid black;">
+                    <div class="panel-heading text-center bg-primary" style="border-bottom: 2px solid black;">
+                        <h2>Target Score</h2>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p>
+                            <h2 id="target-score">
+                                <strong>0</strong>
+                            </h2>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="panel panel-default bg-white" style="border: 2px solid black;">
+                    <div class="panel-heading text-center bg-primary" style="border-bottom: 2px solid black;">
+                        <h2>Your Score</h2>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p>
+                            <h2 id="your-score">
+                                <strong>0</strong>
+                            </h2>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="panel panel-default bg-white" style="border: 2px solid black;">
+                    <div class="panel-heading text-center bg-primary" style="border-bottom: 2px solid black;">
+                        <h2>Crystal Options</h2>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p style="margin-top: 7px;">
+                            <img src="pictures/blue.png" style="max-width: 50px; max-height: 50px;" id="blue">
+                            <img src="pictures/red.png" style="max-width: 50px; max-height: 50px;" id="red">
+                            <img src="pictures/yellow.png" style="max-width: 50px; max-height: 50px;" id="yellow">
+                            <img src="pictures/green.png" style="max-width: 50px; max-height: 50px;" id="green">
+
+
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="panel panel-default bg-white" style="border: 2px solid black;">
+                    <div class="panel-heading text-center bg-primary" style="border-bottom: 2px solid black;">
+                        <h2>Wins</h2>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p>
+                            <h2 id="win-count">
+                                <strong>0</strong>
+                            </h2>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="panel panel-default bg-white" style="border: 2px solid black;">
+                    <div class="panel-heading text-center bg-primary" style="border-bottom: 2px solid black;">
+                        <h2>Losses</h2>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p>
+                            <h2 id="loss-count">
+                                <strong>0</strong>
+                            </h2>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="logic.js"></script>
+
+
+</body>
+
+</html>
