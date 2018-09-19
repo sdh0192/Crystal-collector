@@ -82,7 +82,7 @@ var checkWin = function () {
 
 
 
-// Run Da Process, Bruh
+// Main Operation/On Click Events
 //---------------------------------------------------------------------------------------------------
 
 startGame();
